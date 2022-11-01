@@ -1,0 +1,8 @@
+<% @movies.each do |movie| %>
+  <div>
+    <img src="<%= movie.poster_url %>" class="w-50" alt="<%= movie.title %>">
+    <h4><%= movie.title %></h4>
+    <p><%= movie.overview.first(50)+"...." %></p>
+  </div>
+  <%= link_to 'More',  movie_path(movie) %>
+<% end %>
