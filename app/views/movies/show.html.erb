@@ -6,4 +6,5 @@
   <br>
   <p><%= @movie.overview %></p>
   <p>Rating: <%= "⭐️" * @movie.rating %></p>
+  <%= link_to 'Add to a list', list_path(list)  %>
 </div>

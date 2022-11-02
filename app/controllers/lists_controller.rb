@@ -14,6 +14,7 @@ class ListsController < ApplicationController
 
   def create
     @list = List.new(list_params)
+    @list.save
   end
 
   private
