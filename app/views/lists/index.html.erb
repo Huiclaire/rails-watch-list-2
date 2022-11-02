@@ -1,11 +1,15 @@
 <div>
-  <h1>Save any kind of movies</h1>
   <h2>My Lists</h2>
-  <ul>
-    <% @lists.each do |list| %>
-      <li><%= list.name %></li>
-    <% end %>
-    <%= link_to 'Create a movie list', new_list_path %>
-  </ul>
-
+  <% if @lists.empty? %>
+  <h3>No lists yet...</h3>
+  <% else %>
+    <ul>
+      <% @lists.each do |list| %>
+        <li><%= list.name %></li>
+      <% end %>
+      <%# <%= link_to 'Create a movie list', new_list_path %>
+    </ul>
+  <% end %>
+  <h1> Add new list</h1>
+  <%= render 'form', list: @list %>
 </div>
