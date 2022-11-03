@@ -6,5 +6,16 @@
   <br>
   <p><%= @movie.overview %></p>
   <p>Rating: <%= "⭐️" * @movie.rating %></p>
-  <%= link_to 'Add to a list', lists_path %>
+
+  <div class="dropdown movieBtn">
+  <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Add to a list
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <% @lists&.each do |list| %>
+      <%= link_to list.name, movie_bookmarks_path(@movie, bookmark: { list_id: list.id } ), method: :post, class: 'dropdown-item' %>
+    <% end %>
+    <hr>
+    <%= link_to "+ Add new list", lists_path(@list), class: "dd-new-list-btn"%>
+  </ul>
 </div>
