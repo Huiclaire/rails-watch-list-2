@@ -5,7 +5,7 @@
       <div class="card-body d-flex flex-column">
         <h5 class="card-title"><%= movie.title %></h5>
         <p class="card-text"><%= movie.overview.first(50)+"...." %></p>
-        <%= link_to 'Read All',  movie_path(movie), class: "btn btn-secondary" %>
+        <%= link_to 'Read All',  movie_path(movie), class: "btn btn-outline-secondary btn-sm" %>
       </div>
   </div>
   <% end %>
