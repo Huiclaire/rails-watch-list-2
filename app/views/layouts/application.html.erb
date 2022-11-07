@@ -11,18 +11,34 @@
   </head>
 
   <body>
-    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+    <div class="navbar navbar-expand-sm navbar-light navbar-movie">
       <div class="container-fluid">
-        <%= link_to "#", class: "navbar-brand" do %>
-          <%= image_tag "movie-logo.png"%>
-        <% end %>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto">
-            <%= link_to "My Lists", lists_path, class: "btn btn-outline-secondary btn-sm" %>
-          </ul>
-        </div>
+        <a href="/">
+          <%= image_tag "movie-logo.jpg", alt: "movie-logo", width: "60", height: "100" %>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <%= link_to "My Lists", lists_path, class: "btn btn-outline-secondary btn-sm" %>
+        </ul>
       </div>
     </div>
-    <%= yield %>
+
+    <div class="container min-vh-100">
+      <%= yield %>
+    </div>
+
+    <div class="footer mt-3">
+      <div class="footer-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="footer-copyright fs-6">
+        This is made by <i class="fas fa-heart"></i> Claire Lin
+      </div>
+    </div>
   </body>
 </html>
