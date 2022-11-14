@@ -1,4 +1,4 @@
-<div class= "movies-grid">
+<div class= "movies-grid container min-vh-100">
   <% @movies.each do |movie| %>
   <div class="card movie-card grid-item">
       <img src="<%= movie.poster_url %>" class="card-img-top rounded" alt="<%= movie.title %>">
