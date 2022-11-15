@@ -1,18 +1,26 @@
 <div class="cover d-flex align-items-center justify-content-center mb-3">
-  <h2>My Lists</h2>
+  <h2>Save any kind of movies</h2>
 </div>
 
 <div class="container">
   <% if @lists.empty? %>
   <h3>No lists yet...</h3>
   <% else %>
-    <ul>
+  <h1 class="mt-4 mb-2">My Lists</h1>
+    <div class="row">
       <% @lists.each do |list| %>
-        <li><%= link_to list.name, list_path(list) %></li>
+        <div class="co-12 col-sm-6 col-md-4 mb-3">
+          <%# list cards %>
+          <%= link_to list_path(list), class:"text-decoration-none" do%>
+            <div class="card-list" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://source.unsplash.com/random')">
+              <%= list.name %>
+            </div>
+          <% end %>
+        </div>
       <% end %>
-      <%# <%= link_to 'Create a movie list', new_list_path %>
-    </ul>
+    </div>
   <% end %>
-  <h1> Add new list</h1>
+
+  <h1 class="mt-4 mb-2"> Add new list</h1>
   <%= render 'form', list: @list %>
 </div>
