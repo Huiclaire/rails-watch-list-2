@@ -1,7 +1,22 @@
-<h1><%= @list.name %></h1>
-<%= link_to 'Add a movie', root_path %>
-<ul class="list-group">
+<div class="cover-list d-flex align-items-center justify-content-center mb-3">
+  <h2><%= @list.name %></h2>
+</div>
+
+
+<div class= "movies-grid container min-vh-100 mt-3">
   <% @list.bookmarks.each do |bookmark| %>
-    <li class="list-group-item"><%= bookmark.movie_id %></li>
+  <% movie = bookmark.movie %>
+  <div class="card movie-card grid-item">
+    <img src="<%= movie.poster_url %>" class="card-img-top rounded" alt="<%= movie.title %>">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title"><%= movie.title %></h5>
+      <p class="card-text "><%= movie.overview.first(200)+"...." %></p>
+      <%= link_to 'Delete',  bookmark_path(bookmark),
+      data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to remove #{movie.title} from your #{@list.name} list?"},
+      class: "btn btn-gradient btn-sm" %>
+    </div>
+  </div>
   <% end %>
-</ul>
+
+
+</div>

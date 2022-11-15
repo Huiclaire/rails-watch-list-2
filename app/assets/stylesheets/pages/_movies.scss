@@ -4,17 +4,15 @@
 
 .movies-grid {
   display: grid;
-  grid-template-columns: 220px 220px 220px 220px;
+  // grid-template-columns: 220px 220px 220px 220px;
   column-gap: 15px;
   row-gap: 15px;
   justify-content: center;
 }
 
 .movie-card {
-  // border-bottom: 1px solid rgba(0,0,0,0.1);
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   border-radius: 5px;
-
 
   &:hover {
     width: 101%;

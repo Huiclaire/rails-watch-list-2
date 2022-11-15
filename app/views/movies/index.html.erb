@@ -1,12 +1,12 @@
 <div class= "movies-grid container min-vh-100 mt-3">
   <% @movies.each do |movie| %>
   <div class="card movie-card grid-item">
-      <img src="<%= movie.poster_url %>" class="card-img-top rounded" alt="<%= movie.title %>">
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title"><%= movie.title %></h5>
-        <p class="card-text "><%= movie.overview.first(50)+"...." %></p>
-        <%= link_to 'Read All',  movie_path(movie), class: "btn btn-gradient btn-sm" %>
-      </div>
+    <img src="<%= movie.poster_url %>" class="card-img-top rounded" alt="<%= movie.title %>">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title"><%= movie.title %></h5>
+      <p class="card-text "><%= movie.overview.first(50)+"...." %></p>
+      <%= link_to 'Read All',  movie_path(movie), class: "btn btn-gradient btn-sm" %>
+    </div>
   </div>
   <% end %>
 </div>
