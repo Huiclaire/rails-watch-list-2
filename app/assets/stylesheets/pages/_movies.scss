@@ -28,6 +28,32 @@
   font-size: 16px;
 }
 
+.movie-page-card {
+  margin-top: 60px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);
+  display: flex;
+  background-color: $light-gray;
+  padding: 40px;
+}
+
+.movie-poster {
+  // object-fit: cover;
+  // flex-grow: 1;
+  height: 90vh;
+  margin-right: 40px;
+}
+
+.movie-infos {
+  font-size: small;
+  position: relative;
+  // .movieBtn {
+  //   position: absolute;
+  //   bottom: 30px;
+  //   right: 30px;
+  // }
+}
+
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {

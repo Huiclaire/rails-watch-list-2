@@ -1,15 +1,23 @@
-<div>
-  <img src="<%= @movie.poster_url %>" alt="<%= @movie.title %>">
-  <img src="<%= @movie.backdrop_path %>" alt="<%= @movie.title %>">
-  <h1><%= @movie.title %></h1>
-  <p><%= @movie.release_date %></p>
-  <br>
-  <p><%= @movie.overview %></p>
-  <p>Rating: <%= "⭐️" * @movie.rating %></p>
-
-  Add to list
-
-  <% @lists.each do |list| %>
-      <%= button_to list.name, movie_bookmarks_path(@movie, bookmark: { list_id: list.id }), data: { "turbo_method": :post } %>
-  <% end %>
+<div class="container movie-page-card">
+  <img src="<%= @movie.poster_url %>" alt="<%= @movie.title %>" class="movie-poster">
+  <div class="movie-elements">
+    <img src="<%= @movie.backdrop_path %>" alt="<%= @movie.title %>">
+    <div class="movie-infos mt-4">
+      <h3><%= @movie.title %></h3>
+      <p><%= @movie.release_date %></p>
+      <p><%= @movie.overview %></p>
+      <p>Rating: <%= "⭐️" * @movie.rating %></p>
+      <div class="dropdown movieBtn">
+      <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        Add to a list
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <% @lists.each do |list| %>
+          <%= link_to list.name, movie_bookmarks_path(@movie, bookmark: { list_id: list.id } ), data: { "turbo_method": :post }, class: 'dropdown-item' %>
+        <% end %>
+        <hr>
+        <%= link_to "+ Add new list", "/lists/#new-list", class: "dd-new-list-btn"%>
+      </ul>
+    </div>
+  </div>
 </div>

@@ -6,10 +6,8 @@
   height: 60px;
   color: rgba(0,0,0,0.3);
   background-color: white;
-  // position: fixed;
-  // bottom: 0;
-  // width: calc(100%);
-  // padding: 0px 32px;
+  position: static;
+  bottom: 0;
 }
 
 .footer-links {
