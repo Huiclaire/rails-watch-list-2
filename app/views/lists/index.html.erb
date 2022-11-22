@@ -21,6 +21,26 @@
     </div>
   <% end %>
 
-  <h1 class="mt-4 mb-2"> Add new list</h1>
-  <%= render 'form', list: @list %>
+  <%# <div class="create-list">
+    <h3 class="mt-4 mb-2 create-list"> Add new list</h3>
+    <%= render 'form', list: @list %>
+
+
+ <%# Form for new list %>
+
+  <div class="py-5">
+    <div class="row">
+      <div class="col-12 col-md-6 offset-lg-3">
+        <div class="create-list rounded p-3 shadow">
+          <h3>Add new list</h3>
+          <%= simple_form_for @list do |f| %>
+            <%= f.input :name, placeholder: 'Drama' %>
+            <%= f.input :photo, as: :file %>
+            <%= f.submit class: 'btn btn-gradient' %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
