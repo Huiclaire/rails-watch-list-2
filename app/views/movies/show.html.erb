@@ -13,7 +13,9 @@
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
         <% @lists.each do |list| %>
-          <%= link_to list.name, movie_bookmarks_path(@movie, bookmark: { list_id: list.id } ), data: { "turbo_method": :post }, class: 'dropdown-item' %>
+          <%= link_to list.name, new_movie_bookmark_path(@movie),
+          class: "dropdown-item"
+          %>
         <% end %>
         <hr>
         <%= link_to "+ Add new list", "/lists/#new-list", class: "dd-new-list-btn"%>
