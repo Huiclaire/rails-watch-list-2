@@ -72,7 +72,7 @@
         <% end %>
         <% @list.reviews.each do |review| %>
           <div>
-            <% review.rating.times do %>
+            <% review.rating.round.to_i.times do %>
               <i class="fas fa-star star-yellow"></i>
             <% end %>
             <small><em class="text-muted"><%= distance_of_time_in_words_to_now(review.created_at) %> ago</em></small>
