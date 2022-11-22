@@ -87,6 +87,7 @@
           <%= simple_form_for [@list, @review] do |f| %>
             <%= f.input :content, placeholder: "Add your review here..." %>
             <%# <%= f.input :rating, as: :select, collection: (1..5), required: true, prompt: "What's your rating", input_html: { data: { controller: "star-rating" } } %>
+            <%= f.input :rating, as: :select, collection: (1..5),
             <%= f.submit "Submit review", class:"btn btn-gradient" %>
           <% end %>
         </div>
