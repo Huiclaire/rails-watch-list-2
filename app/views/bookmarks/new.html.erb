@@ -1,3 +1,5 @@
+<%= @bookmark.errors.full_messages.first if @bookmark.errors.any? %>
+
 <%= simple_form_for [ @movie, @bookmark ] do |f| %>
   <%= f.input :comment %>
   <%= f.association :list %>
