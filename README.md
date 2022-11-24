@@ -1,24 +1,17 @@
-# README
+# Movie Watch List
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+🎬🍿 A movie watchlist web app to create lists in which you can save your favourite movies and add reviews to both the movie and the list.
 
-Things you may want to cover:
+## Tech used
+* Back end: Ruby on Rails
+* Front end: HTML5, CSS3, Bootstrap
+* Hosting: Heroku
+* Seed real movies by using tmdb API
 
-* Ruby version
+## Features 
+* As a user, I can see all my movie lists
+* As a user, I can create a movie list
+* As a user, I can see the details of a movie list
+* As a user, I can bookmark a movie inside a movie list
+* As a user, I can destroy a bookmark
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
