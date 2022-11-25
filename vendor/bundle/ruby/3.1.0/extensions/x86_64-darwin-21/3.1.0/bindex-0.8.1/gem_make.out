@@ -1,0 +1,16 @@
+current directory: /Users/mac/code/Huiclaire/rails-watch-list#2/vendor/bundle/ruby/3.1.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/mac/.rbenv/versions/3.1.2/bin/ruby -I /Users/mac/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20221125-54249-nomxuq.rb extconf.rb
+creating Makefile
+
+current directory: /Users/mac/code/Huiclaire/rails-watch-list#2/vendor/bundle/ruby/3.1.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= clean
+
+current directory: /Users/mac/code/Huiclaire/rails-watch-list#2/vendor/bundle/ruby/3.1.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\=
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/mac/code/Huiclaire/rails-watch-list#2/vendor/bundle/ruby/3.1.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20221125-54249-oyrh2x/skiptrace/internal

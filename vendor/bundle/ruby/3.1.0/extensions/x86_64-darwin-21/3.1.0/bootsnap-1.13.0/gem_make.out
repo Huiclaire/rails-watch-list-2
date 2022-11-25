@@ -1,0 +1,16 @@
+current directory: /Users/mac/code/Huiclaire/rails-watch-list#2/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.13.0/ext/bootsnap
+/Users/mac/.rbenv/versions/3.1.2/bin/ruby -I /Users/mac/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20221125-54249-ssyog8.rb extconf.rb
+creating Makefile
+
+current directory: /Users/mac/code/Huiclaire/rails-watch-list#2/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.13.0/ext/bootsnap
+make DESTDIR\= clean
+
+current directory: /Users/mac/code/Huiclaire/rails-watch-list#2/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.13.0/ext/bootsnap
+make DESTDIR\=
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/mac/code/Huiclaire/rails-watch-list#2/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.13.0/ext/bootsnap
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20221125-54249-qj2jgi/bootsnap

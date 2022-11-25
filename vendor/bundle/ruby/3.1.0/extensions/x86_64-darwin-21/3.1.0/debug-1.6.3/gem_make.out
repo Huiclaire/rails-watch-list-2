@@ -1,0 +1,17 @@
+current directory: /Users/mac/code/Huiclaire/rails-watch-list#2/vendor/bundle/ruby/3.1.0/gems/debug-1.6.3/ext/debug
+/Users/mac/.rbenv/versions/3.1.2/bin/ruby -I /Users/mac/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20221125-54249-zec52b.rb extconf.rb
+creating Makefile
+
+current directory: /Users/mac/code/Huiclaire/rails-watch-list#2/vendor/bundle/ruby/3.1.0/gems/debug-1.6.3/ext/debug
+make DESTDIR\= clean
+
+current directory: /Users/mac/code/Huiclaire/rails-watch-list#2/vendor/bundle/ruby/3.1.0/gems/debug-1.6.3/ext/debug
+make DESTDIR\=
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.bundle
+ld: warning: -undefined dynamic_lookup may not work with chained fixups
+
+current directory: /Users/mac/code/Huiclaire/rails-watch-list#2/vendor/bundle/ruby/3.1.0/gems/debug-1.6.3/ext/debug
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 debug.bundle ./.gem.20221125-54249-wjon3y/debug
