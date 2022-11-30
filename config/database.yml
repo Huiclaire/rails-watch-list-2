@@ -82,10 +82,12 @@ default: &default
 # for a full overview on how database connection configuration can be specified.
 #
 
-development:
-  <<: *default
-  database: rails-watch-list_development
-
 test:
   <<: *default
   database: rails-watch-list_test
+
+production:
+  <<: *default
+  database: rails_watch_list#2_production
+  username: rails_watch_list#2
+  password: <%= ENV['MYSITE_DATABASE_PASSWORD'] %>
