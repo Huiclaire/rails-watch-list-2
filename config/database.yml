@@ -23,13 +23,13 @@ default: &default
 
 development:
   <<: *default
-  database: rails_watch_list#2_development
+  database: rails_watch_list-2_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: rails_watch_list#2
+  #username: rails_watch_list-2
 
   # The password associated with the postgres role (username).
   #password:
@@ -88,6 +88,4 @@ test:
 
 production:
   <<: *default
-  database: rails_watch_list#2_production
-  username: rails_watch_list#2
-  password: <%= ENV['MYSITE_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
