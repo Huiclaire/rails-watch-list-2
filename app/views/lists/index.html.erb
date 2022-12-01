@@ -15,7 +15,7 @@
             <div class="card-category"
             data-aos="zoom-in"
             style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
-            url(<%= list.photo.attached? ? cl_image_path(list.photo.key) : asset_path('list_background.jpg') %>)">
+            url(<%= list.photo.attached? ? cl_image_path(list.photo.key): asset_path('list_background.jpg') %>)">
               <%= list.name %>
             </div>
           <% end %>
@@ -23,11 +23,6 @@
       <% end %>
     </div>
   <% end %>
-
-  <%# <div class="create-list">
-    <h3 class="mt-4 mb-2 create-list"> Add new list</h3>
-    <%= render 'form', list: @list %>
-
 
  <%# Form for new list %>
 
