@@ -12,7 +12,10 @@
         <div class="co-12 col-sm-6 col-md-4 mb-3">
           <%# list cards %>
           <%= link_to list_path(list), class:"text-decoration-none" do%>
-            <div class="card-list" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://source.unsplash.com/random')">
+            <div class="card-category"
+            data-aos="zoom-in"
+            style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+            url(<%= list.photo.attached? ? cl_image_path(list.photo.key) : asset_path('list_background.jpg') %>)">
               <%= list.name %>
             </div>
           <% end %>
