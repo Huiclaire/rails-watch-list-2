@@ -1,7 +1,8 @@
-<%= @bookmark.errors.full_messages.first if @bookmark.errors.any? %>
-
-<%= simple_form_for [ @movie, @bookmark ] do |f| %>
-  <%= f.input :comment %>
-  <%= f.association :list %>
-  <%= f.submit "Add movie to list", class: "btn btn-dark" %>
-<% end %>
+<div class="container mt-5">
+  <%= @bookmark.errors.full_messages.first if @bookmark.errors.any? %>
+  <%= simple_form_for [ @movie, @bookmark ] do |f| %>
+    <%= f.input :comment %>
+    <%= f.association :list %>
+    <%= f.submit "Add movie to list", class: "btn btn-dark" %>
+  <% end %>
+</div>
