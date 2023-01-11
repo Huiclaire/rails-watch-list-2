@@ -2,6 +2,8 @@
 
 🎬🍿 A movie watchlist web app to create lists in which you can save your favourite movies and add reviews to both the movie and the list.
 
+![App Screenshot](https://github.com/Huiclaire/rails-watch-list-2/blob/master/app/assets/images/project-picture.jpg)
+
 ## Tech used
 * Back end: Ruby on Rails
 * Front end: HTML5, CSS3, Bootstrap
